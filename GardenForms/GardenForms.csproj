@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon>32349redapple_98912.png</PackageIcon>
     <ApplicationIcon>Resources\32349redapple_98912.ico</ApplicationIcon>
+    <PlatformTarget>x64</PlatformTarget>
+    <BaseOutputPath>C:\Users\KendallP\Pictures\GardenFormsBuilds</BaseOutputPath>
+    <SignAssembly>True</SignAssembly>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	  <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
 
   <ItemGroup>
