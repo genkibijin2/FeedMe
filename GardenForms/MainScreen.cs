@@ -40,7 +40,8 @@ namespace GardenForms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Form2 game2 = new Form2();
+            game2.ShowDialog();
         }
     }
 }
