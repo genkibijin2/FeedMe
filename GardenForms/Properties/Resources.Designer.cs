@@ -73,6 +73,36 @@ namespace GardenForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg006 {
+            get {
+                object obj = ResourceManager.GetObject("bg006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap I_B_CARD14_TMX_1 {
+            get {
+                object obj = ResourceManager.GetObject("I_B_CARD14.TMX_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap I_B_CARD14_TMX_1BRIGHT {
+            get {
+                object obj = ResourceManager.GetObject("I_B_CARD14.TMX_1BRIGHT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap squiggle {
             get {
                 object obj = ResourceManager.GetObject("squiggle", resourceCulture);

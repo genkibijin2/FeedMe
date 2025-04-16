@@ -41,14 +41,16 @@ namespace GardenForms
             {
                 btnClickThis.Text = btnClickThis.Text += ".";
             }
-            else if (timesclicked > 124)
+            else if ((timesclicked > 124) && (timesclicked <= 130))
             {
                 ShakeThisWindow(this);
                 Console.Beep(750, 10);
                 Console.Beep(750, 10);
                 Console.Beep(750, 10);
-               
-            
+            }
+            else if (timesclicked > 130)
+            {
+                this.Close();
             }
 
             else //Thanks x2, 3, etc combo counter.
