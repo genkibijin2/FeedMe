@@ -16,7 +16,7 @@ namespace GardenForms
             btnClickThis.BackColor = Color.FromArgb(255, 255, 255);
         }
 
-        private void btnClickThis_Click(object sender, EventArgs e)
+        private async void btnClickThis_Click(object sender, EventArgs e)
         {
 
             timesclicked++;

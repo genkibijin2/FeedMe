@@ -98,7 +98,7 @@
             dungeonForm1.Sizable = false;
             dungeonForm1.Size = new Size(382, 263);
             dungeonForm1.SmartBounds = true;
-            dungeonForm1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            dungeonForm1.StartPosition = FormStartPosition.CenterScreen;
             dungeonForm1.TabIndex = 6;
             dungeonForm1.Text = "Feed Me";
             dungeonForm1.TitleColor = Color.White;
@@ -136,6 +136,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(261, 65);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Feed Me";
             TransparencyKey = Color.Fuchsia;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

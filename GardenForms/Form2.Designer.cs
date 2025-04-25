@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             poisonStyleManager1 = new ReaLTaiizor.Manager.PoisonStyleManager(components);
             Toolkit = new ReaLTaiizor.Forms.DungeonForm();
+            InputConsole = new ReaLTaiizor.Controls.DungeonRichTextBox();
+            OutputConsole1 = new ReaLTaiizor.Controls.DungeonTextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)poisonStyleManager1).BeginInit();
             Toolkit.SuspendLayout();
@@ -48,6 +50,8 @@
             // 
             Toolkit.BackColor = Color.FromArgb(244, 241, 243);
             Toolkit.BorderColor = Color.FromArgb(175, 192, 255);
+            Toolkit.Controls.Add(InputConsole);
+            Toolkit.Controls.Add(OutputConsole1);
             Toolkit.Controls.Add(pictureBox1);
             Toolkit.Dock = DockStyle.Fill;
             Toolkit.FillEdgeColorA = Color.FromArgb(175, 192, 255);
@@ -68,6 +72,42 @@
             Toolkit.TabIndex = 0;
             Toolkit.Text = "Garden Tools";
             Toolkit.TitleColor = Color.White;
+            // 
+            // InputConsole
+            // 
+            InputConsole.AutoWordSelection = false;
+            InputConsole.BackColor = Color.Transparent;
+            InputConsole.BorderColor = Color.FromArgb(180, 180, 180);
+            InputConsole.EdgeColor = Color.White;
+            InputConsole.Font = new Font("MS Mincho", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            InputConsole.ForeColor = Color.Black;
+            InputConsole.Location = new Point(64, 254);
+            InputConsole.Name = "InputConsole";
+            InputConsole.ReadOnly = false;
+            InputConsole.Size = new Size(316, 33);
+            InputConsole.TabIndex = 2;
+            InputConsole.Text = "Type here";
+            InputConsole.TextBackColor = Color.White;
+            InputConsole.Visible = false;
+            InputConsole.WordWrap = true;
+            // 
+            // OutputConsole1
+            // 
+            OutputConsole1.BackColor = Color.Transparent;
+            OutputConsole1.BorderColor = Color.Transparent;
+            OutputConsole1.EdgeColor = Color.Transparent;
+            OutputConsole1.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            OutputConsole1.ForeColor = Color.Black;
+            OutputConsole1.Location = new Point(64, 68);
+            OutputConsole1.MaxLength = 32767;
+            OutputConsole1.Multiline = true;
+            OutputConsole1.Name = "OutputConsole1";
+            OutputConsole1.ReadOnly = true;
+            OutputConsole1.Size = new Size(316, 166);
+            OutputConsole1.TabIndex = 1;
+            OutputConsole1.Text = "OutputConsole";
+            OutputConsole1.TextAlignment = HorizontalAlignment.Left;
+            OutputConsole1.UseSystemPasswordChar = false;
             // 
             // pictureBox1
             // 
@@ -105,5 +145,7 @@
         private ReaLTaiizor.Manager.PoisonStyleManager poisonStyleManager1;
         private ReaLTaiizor.Forms.DungeonForm Toolkit;
         private PictureBox pictureBox1;
+        private ReaLTaiizor.Controls.DungeonTextBox OutputConsole1;
+        private ReaLTaiizor.Controls.DungeonRichTextBox InputConsole;
     }
 }
