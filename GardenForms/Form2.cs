@@ -16,10 +16,14 @@ namespace GardenForms
 
         string initialText = "Output Console...";
         string currentUserInput = "";
+        int currentTemperature = 32;
+
         public Form2()
         {
             InitializeComponent();
             InputConsole1.Visible = false;
+            ConvertButton.Visible = false;
+            TemperatureInput.Visible = false;
             Size = new Size(450, 450);
             ConsoleConversation(); //"Main" function of form, which is the conversation with the output console.
 
@@ -54,7 +58,7 @@ namespace GardenForms
 
         }
 
-        
+
 
         private async Task ConsoleConversation()
         {
@@ -63,6 +67,8 @@ namespace GardenForms
             await outputToConsole("What would you like?");
             InputConsole1.Text = "Random Division";
             InputConsole1.Visible = true;
+            ConvertButton.Visible = true;
+            TemperatureInput.Visible = true;
         }
 
         private void InputConsole1_Click(object sender, EventArgs e) //Clicking the first program button
@@ -97,9 +103,36 @@ namespace GardenForms
             await outputToConsole(program1Output); //Write final output to console.
         }
 
-        private void GardenToolsKill_Click(object sender, EventArgs e)
+        private void GardenToolsKill_Click(object sender, EventArgs e) //Close the program
         {
             this.Close();
+        }
+
+        private void ConvertButton_Click(object sender, EventArgs e) //launches converter method
+        {
+            ConverterProgram();
+        }
+
+        private async Task ConverterProgram() //converts temperature into Fahrenheit 
+        {
+            
+
+
+            try //try to parse int number from text box and throw an exception if it can't
+            {
+                currentTemperature = Int32.Parse(TemperatureInput.Text);
+                await outputToConsole($"Converting {currentTemperature} into celcius...");
+                decimal fahrenheit = (decimal)currentTemperature;
+                
+                fahrenheit = fahrenheit - 32m;
+                decimal celcius = fahrenheit * (5m / 9m);
+                string roundedCelcius = celcius.ToString("0.00");
+                await outputToConsole($"{currentTemperature}°F in celcius is {roundedCelcius}°C!");
+            }
+            catch (Exception)
+            {
+               await outputToConsole("That's not a number...");
+            }
         }
     }
 }

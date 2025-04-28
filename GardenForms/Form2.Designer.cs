@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             poisonStyleManager1 = new ReaLTaiizor.Manager.PoisonStyleManager(components);
             Toolkit = new ReaLTaiizor.Forms.DungeonForm();
+            TemperatureInput = new ReaLTaiizor.Controls.DungeonTextBox();
+            ConvertButton = new ReaLTaiizor.Controls.DungeonButtonLeft();
             GardenToolsKill = new ReaLTaiizor.Controls.PoisonButton();
             InputConsole1 = new ReaLTaiizor.Controls.DungeonButtonLeft();
             OutputConsole1 = new ReaLTaiizor.Controls.DungeonTextBox();
@@ -51,6 +53,8 @@
             // 
             Toolkit.BackColor = Color.FromArgb(244, 241, 243);
             Toolkit.BorderColor = Color.FromArgb(175, 192, 255);
+            Toolkit.Controls.Add(TemperatureInput);
+            Toolkit.Controls.Add(ConvertButton);
             Toolkit.Controls.Add(GardenToolsKill);
             Toolkit.Controls.Add(InputConsole1);
             Toolkit.Controls.Add(OutputConsole1);
@@ -74,6 +78,45 @@
             Toolkit.TabIndex = 0;
             Toolkit.Text = "Garden Tools";
             Toolkit.TitleColor = Color.White;
+            // 
+            // TemperatureInput
+            // 
+            TemperatureInput.BackColor = Color.Transparent;
+            TemperatureInput.BorderColor = Color.FromArgb(180, 180, 180);
+            TemperatureInput.EdgeColor = Color.White;
+            TemperatureInput.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TemperatureInput.ForeColor = Color.Black;
+            TemperatureInput.Location = new Point(64, 278);
+            TemperatureInput.MaxLength = 4;
+            TemperatureInput.Multiline = false;
+            TemperatureInput.Name = "TemperatureInput";
+            TemperatureInput.ReadOnly = false;
+            TemperatureInput.Size = new Size(46, 26);
+            TemperatureInput.TabIndex = 9;
+            TemperatureInput.Text = "32";
+            TemperatureInput.TextAlignment = HorizontalAlignment.Left;
+            TemperatureInput.UseSystemPasswordChar = false;
+            // 
+            // ConvertButton
+            // 
+            ConvertButton.BackColor = Color.Transparent;
+            ConvertButton.BorderColor = Color.FromArgb(180, 180, 180);
+            ConvertButton.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 128);
+            ConvertButton.Image = null;
+            ConvertButton.ImageAlign = ContentAlignment.MiddleLeft;
+            ConvertButton.InactiveColorA = Color.FromArgb(253, 252, 252);
+            ConvertButton.InactiveColorB = Color.FromArgb(239, 237, 236);
+            ConvertButton.Location = new Point(116, 278);
+            ConvertButton.Name = "ConvertButton";
+            ConvertButton.PressedColorA = Color.FromArgb(226, 226, 226);
+            ConvertButton.PressedColorB = Color.FromArgb(237, 237, 237);
+            ConvertButton.PressedContourColorA = Color.FromArgb(167, 167, 167);
+            ConvertButton.PressedContourColorB = Color.FromArgb(167, 167, 167);
+            ConvertButton.Size = new Size(97, 26);
+            ConvertButton.TabIndex = 8;
+            ConvertButton.Text = "°F to °C";
+            ConvertButton.TextAlignment = StringAlignment.Center;
+            ConvertButton.Click += ConvertButton_Click;
             // 
             // GardenToolsKill
             // 
@@ -101,15 +144,15 @@
             InputConsole1.ImageAlign = ContentAlignment.MiddleLeft;
             InputConsole1.InactiveColorA = Color.FromArgb(253, 252, 252);
             InputConsole1.InactiveColorB = Color.FromArgb(239, 237, 236);
-            InputConsole1.Location = new Point(64, 251);
+            InputConsole1.Location = new Point(64, 240);
             InputConsole1.Name = "InputConsole1";
             InputConsole1.PressedColorA = Color.FromArgb(226, 226, 226);
             InputConsole1.PressedColorB = Color.FromArgb(237, 237, 237);
             InputConsole1.PressedContourColorA = Color.FromArgb(167, 167, 167);
             InputConsole1.PressedContourColorB = Color.FromArgb(167, 167, 167);
-            InputConsole1.Size = new Size(316, 30);
+            InputConsole1.Size = new Size(149, 30);
             InputConsole1.TabIndex = 2;
-            InputConsole1.Text = "Program 1";
+            InputConsole1.Text = "Random Division";
             InputConsole1.TextAlignment = StringAlignment.Center;
             InputConsole1.Click += InputConsole1_Click;
             // 
@@ -141,7 +184,6 @@
             pictureBox1.Size = new Size(410, 378);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-          
             // 
             // Form2
             // 
@@ -170,5 +212,7 @@
         private ReaLTaiizor.Controls.DungeonTextBox OutputConsole1;
         private ReaLTaiizor.Controls.DungeonButtonLeft InputConsole1;
         private ReaLTaiizor.Controls.PoisonButton GardenToolsKill;
+        private ReaLTaiizor.Controls.DungeonButtonLeft ConvertButton;
+        private ReaLTaiizor.Controls.DungeonTextBox TemperatureInput;
     }
 }
