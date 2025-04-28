@@ -28,20 +28,33 @@ namespace GardenForms
             game1.ShowDialog();
         }
 
-        private void FeedMeCard_Hover(Object sender, EventArgs e)
+        private void FeedMeCard_Hover(Object sender, EventArgs e) //change picture to highlighted version (OPTION 1: FEED ME)
         {
             FeedMeCard.Image = Properties.Resources.I_B_CARD14_TMX_1BRIGHT;
         }
 
-        private void FeedMeCard_Leave(object sender, EventArgs e)
+        private void FeedMeCard_Leave(object sender, EventArgs e) //revert it back
         {
             FeedMeCard.Image = Properties.Resources.I_B_CARD14_TMX_1;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void GardenToolsBox_Click(object sender, EventArgs e)
         {
             Form2 game2 = new Form2();
             game2.ShowDialog();
         }
+
+        private void GardenToolsBox_Hover(object sender, EventArgs e)
+        {
+            GardenToolsBox.Image = Properties.Resources.ToolBoxCard_bright;
+        }
+
+        private void GardenToolsBox_Leave(object sender, EventArgs e)
+        {
+            GardenToolsBox.Image = Properties.Resources.ToolBoxCard;
+        }
+
+       
     }
 }

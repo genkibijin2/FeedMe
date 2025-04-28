@@ -31,8 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             pictureBox1 = new PictureBox();
             FeedMeCard = new PictureBox();
+            GardenToolsBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FeedMeCard).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)GardenToolsBox).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -45,7 +47,6 @@
             pictureBox1.Size = new Size(874, 457);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // FeedMeCard
             // 
@@ -60,11 +61,25 @@
             FeedMeCard.MouseLeave += FeedMeCard_Leave;
             FeedMeCard.MouseHover += FeedMeCard_Hover;
             // 
+            // GardenToolsBox
+            // 
+            GardenToolsBox.BackgroundImage = Properties.Resources.I_B_CARD14_TMX_1BRIGHT;
+            GardenToolsBox.Image = Properties.Resources.ToolBoxCard;
+            GardenToolsBox.Location = new Point(274, 24);
+            GardenToolsBox.Name = "GardenToolsBox";
+            GardenToolsBox.Size = new Size(98, 126);
+            GardenToolsBox.TabIndex = 3;
+            GardenToolsBox.TabStop = false;
+            GardenToolsBox.Click += GardenToolsBox_Click;
+            GardenToolsBox.MouseLeave += GardenToolsBox_Leave;
+            GardenToolsBox.MouseHover += GardenToolsBox_Hover;
+            // 
             // MainScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(874, 457);
+            Controls.Add(GardenToolsBox);
             Controls.Add(FeedMeCard);
             Controls.Add(pictureBox1);
             Cursor = Cursors.Help;
@@ -77,11 +92,13 @@
             Load += MainScreen_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)FeedMeCard).EndInit();
+            ((System.ComponentModel.ISupportInitialize)GardenToolsBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private PictureBox pictureBox1;
         private PictureBox FeedMeCard;
+        private PictureBox GardenToolsBox;
     }
 }

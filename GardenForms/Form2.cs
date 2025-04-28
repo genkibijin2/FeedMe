@@ -13,16 +13,16 @@ namespace GardenForms
 {
     public partial class Form2 : Form
     {
-        
+
         string initialText = "Output Console...";
         string currentUserInput = "";
         public Form2()
         {
             InitializeComponent();
-            InputConsole.Visible = false;
+            InputConsole1.Visible = false;
             Size = new Size(450, 450);
             ConsoleConversation(); //"Main" function of form, which is the conversation with the output console.
-            
+
         }
 
         private async Task outputToConsole(string currentMessage) //Method that creates a typewriter effect on the text, with async 
@@ -51,20 +51,55 @@ namespace GardenForms
 
         private void dungeonForm1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void Background_click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private async Task ConsoleConversation()
         {
             await outputToConsole(initialText); //Print opening text to console, and wait for method to finish.
             await suspiciousDots();
-            await outputToConsole("What is your name?");
-            InputConsole.Visible = true;
+            await outputToConsole("What would you like?");
+            InputConsole1.Text = "Random Division";
+            InputConsole1.Visible = true;
+        }
+
+        private void InputConsole1_Click(object sender, EventArgs e) //Clicking the first program button
+        {
+            Program1();
+        }
+
+        private async Task Program1() //currently worked on C# Task from microsoft
+        {
+            string program1Output = ""; //Initialize console output (blank)
+            //---------------------------------------------------------------------
+            Random rnd = new Random();
+            await outputToConsole("Generating a number between 1 and 10,000...");
+            int number1 = rnd.Next(1, 10000);
+            await outputToConsole($"Generated {number1}");
+            await suspiciousDots();
+            await outputToConsole("Generating second number between 1 and 10...");
+            int number2 = rnd.Next(1, 10);
+            await outputToConsole($"Generated {number2}");
+            await suspiciousDots();
+            await outputToConsole($"Dividing {number1} by {number2}...");
+            int modResult = number1 % number2;
+            if (modResult == 0)
+            {
+                program1Output = $"{number1} is cleanly divisible by {number2}... Wow!";
+            }
+            else
+            {
+                program1Output = $"Looks like {number1} cannot be divided by {number2}... What a shame!";
+            }
+            //---------------------------------------------------------------------
+            await outputToConsole(program1Output); //Write final output to console.
+        }
+
+        private void GardenToolsKill_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

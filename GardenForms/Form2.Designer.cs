@@ -32,7 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             poisonStyleManager1 = new ReaLTaiizor.Manager.PoisonStyleManager(components);
             Toolkit = new ReaLTaiizor.Forms.DungeonForm();
-            InputConsole = new ReaLTaiizor.Controls.DungeonRichTextBox();
+            GardenToolsKill = new ReaLTaiizor.Controls.PoisonButton();
+            InputConsole1 = new ReaLTaiizor.Controls.DungeonButtonLeft();
             OutputConsole1 = new ReaLTaiizor.Controls.DungeonTextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)poisonStyleManager1).BeginInit();
@@ -50,7 +51,8 @@
             // 
             Toolkit.BackColor = Color.FromArgb(244, 241, 243);
             Toolkit.BorderColor = Color.FromArgb(175, 192, 255);
-            Toolkit.Controls.Add(InputConsole);
+            Toolkit.Controls.Add(GardenToolsKill);
+            Toolkit.Controls.Add(InputConsole1);
             Toolkit.Controls.Add(OutputConsole1);
             Toolkit.Controls.Add(pictureBox1);
             Toolkit.Dock = DockStyle.Fill;
@@ -73,23 +75,43 @@
             Toolkit.Text = "Garden Tools";
             Toolkit.TitleColor = Color.White;
             // 
-            // InputConsole
+            // GardenToolsKill
             // 
-            InputConsole.AutoWordSelection = false;
-            InputConsole.BackColor = Color.Transparent;
-            InputConsole.BorderColor = Color.FromArgb(180, 180, 180);
-            InputConsole.EdgeColor = Color.White;
-            InputConsole.Font = new Font("MS Mincho", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            InputConsole.ForeColor = Color.Black;
-            InputConsole.Location = new Point(64, 254);
-            InputConsole.Name = "InputConsole";
-            InputConsole.ReadOnly = false;
-            InputConsole.Size = new Size(316, 33);
-            InputConsole.TabIndex = 2;
-            InputConsole.Text = "Type here";
-            InputConsole.TextBackColor = Color.White;
-            InputConsole.Visible = false;
-            InputConsole.WordWrap = true;
+            GardenToolsKill.BackColor = Color.Crimson;
+            GardenToolsKill.FlatStyle = FlatStyle.Popup;
+            GardenToolsKill.Font = new Font("MS Mincho", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            GardenToolsKill.Location = new Point(361, 387);
+            GardenToolsKill.Name = "GardenToolsKill";
+            GardenToolsKill.Size = new Size(55, 32);
+            GardenToolsKill.TabIndex = 7;
+            GardenToolsKill.Text = "Kill";
+            GardenToolsKill.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
+            GardenToolsKill.UseCustomBackColor = true;
+            GardenToolsKill.UseCustomFont = true;
+            GardenToolsKill.UseSelectable = true;
+            GardenToolsKill.UseVisualStyleBackColor = false;
+            GardenToolsKill.Click += GardenToolsKill_Click;
+            // 
+            // InputConsole1
+            // 
+            InputConsole1.BackColor = Color.Transparent;
+            InputConsole1.BorderColor = Color.FromArgb(180, 180, 180);
+            InputConsole1.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 128);
+            InputConsole1.Image = null;
+            InputConsole1.ImageAlign = ContentAlignment.MiddleLeft;
+            InputConsole1.InactiveColorA = Color.FromArgb(253, 252, 252);
+            InputConsole1.InactiveColorB = Color.FromArgb(239, 237, 236);
+            InputConsole1.Location = new Point(64, 251);
+            InputConsole1.Name = "InputConsole1";
+            InputConsole1.PressedColorA = Color.FromArgb(226, 226, 226);
+            InputConsole1.PressedColorB = Color.FromArgb(237, 237, 237);
+            InputConsole1.PressedContourColorA = Color.FromArgb(167, 167, 167);
+            InputConsole1.PressedContourColorB = Color.FromArgb(167, 167, 167);
+            InputConsole1.Size = new Size(316, 30);
+            InputConsole1.TabIndex = 2;
+            InputConsole1.Text = "Program 1";
+            InputConsole1.TextAlignment = StringAlignment.Center;
+            InputConsole1.Click += InputConsole1_Click;
             // 
             // OutputConsole1
             // 
@@ -119,7 +141,7 @@
             pictureBox1.Size = new Size(410, 378);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += Background_click;
+          
             // 
             // Form2
             // 
@@ -146,6 +168,7 @@
         private ReaLTaiizor.Forms.DungeonForm Toolkit;
         private PictureBox pictureBox1;
         private ReaLTaiizor.Controls.DungeonTextBox OutputConsole1;
-        private ReaLTaiizor.Controls.DungeonRichTextBox InputConsole;
+        private ReaLTaiizor.Controls.DungeonButtonLeft InputConsole1;
+        private ReaLTaiizor.Controls.PoisonButton GardenToolsKill;
     }
 }
