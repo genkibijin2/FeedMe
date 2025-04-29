@@ -16,7 +16,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\M2Blip.wav" />
+    <None Remove="Resources\msmincho.ttc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Resources\32349redapple_98912.ico" />
+    <EmbeddedResource Include="Resources\M2Blip.wav" />
+    <EmbeddedResource Include="Resources\msmincho.ttc" />
   </ItemGroup>
 
   <ItemGroup>

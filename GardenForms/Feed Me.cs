@@ -1,4 +1,5 @@
 using System;
+using System.Media;
 namespace GardenForms
 {
     public partial class Form1 : Form
@@ -18,16 +19,16 @@ namespace GardenForms
 
         private async void btnClickThis_Click(object sender, EventArgs e)
         {
-
+            
             timesclicked++;
-            Console.Beep((timesclicked * 15 + 37), 40);
+            BEEPSOUND();
             if (timesclicked == 1)
             {
                 btnClickThis.Text = "Thanks. And again?";
             }
             else if (timesclicked == 100)
             {
-                successJingle(); //plays the winning jingle when you hit exactly 100 clicks, but not afterwards.
+                FINISHEDJINGLE(); //plays the winning jingle when you hit exactly 100 clicks, but not afterwards.
                 btnClickThis.Text = "I'm full now, thanks.";
             }
             else if ((timesclicked > 100) && (timesclicked < 120))
@@ -45,9 +46,9 @@ namespace GardenForms
             else if ((timesclicked > 124) && (timesclicked <= 130))
             {
                 ShakeThisWindow(this);
-                Console.Beep(750, 10);
-                Console.Beep(750, 10);
-                Console.Beep(750, 10);
+                BEEPSOUND();
+                BEEPSOUND();
+                BEEPSOUND();
             }
             else if (timesclicked > 130)
             {
@@ -61,33 +62,7 @@ namespace GardenForms
             progressBar1.PerformStep();
         }
 
-        public void successJingle()
-        {
-            //frequencies
-            int E = 659;
-            int F = 698;
-            int G = 784;
-            int Gs = 830;
-            int A = 880;
-            int B = 987;
-
-            //tempo
-            int T = 100;
-
-            Console.Beep(B, T);
-            Console.Beep(A, T);
-            Console.Beep(B, T);
-            Console.Beep(F, T);
-            Console.Beep(B, T);
-            Console.Beep(G, T);
-            Console.Beep(B, T);
-            Console.Beep(E, T);
-            Console.Beep(B, T);
-            Console.Beep(Gs, T);
-            Console.Beep(B, T);
-        }
-
-        private static void ShakeThisWindow(Form1 form)
+        private async Task ShakeThisWindow(Form1 form)
         {
             var randomNumber = new Random(50); //generates a random number sequence
             var originalLocation = form.Location; //grabs the original location of the window
@@ -96,7 +71,7 @@ namespace GardenForms
             {
                 form.Location = new Point(originalLocation.X + randomNumber.Next(-magnitude, magnitude), originalLocation.Y + randomNumber.Next(-magnitude, magnitude));
                 //Takes original location and applies random x
-                System.Threading.Thread.Sleep(20);
+                await Task.Delay(20);
             }
             form.Location = originalLocation; //resets position of form back to normal
         }
@@ -109,6 +84,38 @@ namespace GardenForms
         private void poisonButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private async Task BEEPSOUND() //method that plays M2Blip.wav instead of system beep which lags the main thread.
+        {
+            byte[] soundEffectFile = Properties.Resources.M2Blip;
+            using (var stream = new MemoryStream(soundEffectFile))
+            {
+                using (var soundPlayer = new SoundPlayer(stream))
+                {
+                    soundPlayer.Play();
+                }
+            }
+        }
+
+        private async Task FINISHEDJINGLE() //method that plays final jingle
+        {
+            byte[] soundEffectFile = Properties.Resources.statup;
+            using (var stream = new MemoryStream(soundEffectFile))
+            {
+                using (var soundPlayer = new SoundPlayer(stream))
+                {
+                    soundPlayer.Play();
+                }
+            }
+            soundEffectFile = Properties.Resources.rfuel;
+            using (var stream = new MemoryStream(soundEffectFile))
+            {
+                using (var soundPlayer = new SoundPlayer(stream))
+                {
+                    soundPlayer.Play();
+                }
+            }
         }
     }
 }

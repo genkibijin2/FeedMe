@@ -139,4 +139,24 @@
   <data name="ToolBoxCard_bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToolBoxCard_bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="M2Blip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M2Blip.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Earthbound BLip</comment>
+  </data>
+  <data name="msmincho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmincho.ttc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Font</comment>
+  </data>
+  <data name="rfuel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rfuel.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>refuel sound</comment>
+  </data>
+  <data name="smash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smash.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>smash sound</comment>
+  </data>
+  <data name="statup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statup.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Stat Increase Sound</comment>
+  </data>
 </root>

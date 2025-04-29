@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             poisonStyleManager1 = new ReaLTaiizor.Manager.PoisonStyleManager(components);
             Toolkit = new ReaLTaiizor.Forms.DungeonForm();
+            trackBar1 = new TrackBar();
             TemperatureInput = new ReaLTaiizor.Controls.DungeonTextBox();
             ConvertButton = new ReaLTaiizor.Controls.DungeonButtonLeft();
             GardenToolsKill = new ReaLTaiizor.Controls.PoisonButton();
@@ -40,6 +41,7 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)poisonStyleManager1).BeginInit();
             Toolkit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -53,6 +55,7 @@
             // 
             Toolkit.BackColor = Color.FromArgb(244, 241, 243);
             Toolkit.BorderColor = Color.FromArgb(175, 192, 255);
+            Toolkit.Controls.Add(trackBar1);
             Toolkit.Controls.Add(TemperatureInput);
             Toolkit.Controls.Add(ConvertButton);
             Toolkit.Controls.Add(GardenToolsKill);
@@ -78,6 +81,22 @@
             Toolkit.TabIndex = 0;
             Toolkit.Text = "Garden Tools";
             Toolkit.TitleColor = Color.White;
+            // 
+            // trackBar1
+            // 
+            trackBar1.BackColor = Color.FromArgb(192, 192, 255);
+            trackBar1.Cursor = Cursors.SizeNS;
+            trackBar1.Location = new Point(228, 240);
+            trackBar1.Maximum = 6;
+            trackBar1.Minimum = 1;
+            trackBar1.Name = "trackBar1";
+            trackBar1.Orientation = Orientation.Vertical;
+            trackBar1.Size = new Size(45, 179);
+            trackBar1.TabIndex = 10;
+            trackBar1.TickStyle = TickStyle.Both;
+            trackBar1.Value = 1;
+            trackBar1.Visible = false;
+            trackBar1.Scroll += trackBar1_OnScroll;
             // 
             // TemperatureInput
             // 
@@ -200,6 +219,8 @@
             TransparencyKey = Color.Fuchsia;
             ((System.ComponentModel.ISupportInitialize)poisonStyleManager1).EndInit();
             Toolkit.ResumeLayout(false);
+            Toolkit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -214,5 +235,6 @@
         private ReaLTaiizor.Controls.PoisonButton GardenToolsKill;
         private ReaLTaiizor.Controls.DungeonButtonLeft ConvertButton;
         private ReaLTaiizor.Controls.DungeonTextBox TemperatureInput;
+        private TrackBar trackBar1;
     }
 }
