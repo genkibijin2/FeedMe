@@ -16,9 +16,9 @@ namespace GardenForms
         public MainScreen()
         {
             InitializeComponent();
-            
-            
-         
+
+
+
         }
 
         private void MainScreen_Load(object sender, EventArgs e)
@@ -59,6 +59,10 @@ namespace GardenForms
             GardenToolsBox.Image = Properties.Resources.ToolBoxCard;
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            windows95 game3 = new windows95();
+            game3.ShowDialog();
+        }
     }
 }

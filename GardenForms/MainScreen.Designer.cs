@@ -47,6 +47,7 @@
             pictureBox1.Size = new Size(874, 457);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // FeedMeCard
             // 

@@ -83,6 +83,16 @@ namespace GardenForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap I_B_CARD14_TMX_1 {
             get {
                 object obj = ResourceManager.GetObject("I_B_CARD14.TMX_1", resourceCulture);
@@ -96,6 +106,16 @@ namespace GardenForms.Properties {
         internal static System.Drawing.Bitmap I_B_CARD14_TMX_1BRIGHT {
             get {
                 object obj = ResourceManager.GetObject("I_B_CARD14.TMX_1BRIGHT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jongback {
+            get {
+                object obj = ResourceManager.GetObject("jongback", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -117,6 +137,16 @@ namespace GardenForms.Properties {
             get {
                 object obj = ResourceManager.GetObject("msmincho", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paintbackground {
+            get {
+                object obj = ResourceManager.GetObject("paintbackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -176,6 +206,26 @@ namespace GardenForms.Properties {
         internal static System.Drawing.Bitmap ToolBoxCard_bright {
             get {
                 object obj = ResourceManager.GetObject("ToolBoxCard_bright", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap untitledpaint {
+            get {
+                object obj = ResourceManager.GetObject("untitledpaint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap untitledpaint1 {
+            get {
+                object obj = ResourceManager.GetObject("untitledpaint1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -16,12 +16,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\jong1.png" />
+    <None Remove="Resources\jong2.png" />
+    <None Remove="Resources\jong3.png" />
+    <None Remove="Resources\jong4.png" />
     <None Remove="Resources\M2Blip.wav" />
     <None Remove="Resources\msmincho.ttc" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\32349redapple_98912.ico" />
+    <EmbeddedResource Include="Resources\jong1.png" />
+    <EmbeddedResource Include="Resources\jong2.png" />
+    <EmbeddedResource Include="Resources\jong3.png" />
+    <EmbeddedResource Include="Resources\jong4.png" />
     <EmbeddedResource Include="Resources\M2Blip.wav" />
     <EmbeddedResource Include="Resources\msmincho.ttc" />
   </ItemGroup>
