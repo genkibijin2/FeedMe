@@ -39,6 +39,9 @@
             tileSlot4 = new PictureBox();
             tileSlot5 = new PictureBox();
             BetButton = new ReaLTaiizor.Controls.HopeButton();
+            ScoreBox = new Label();
+            DemonScoreBox = new Label();
+            PlayerTurnButton = new ReaLTaiizor.Controls.HopeButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -160,13 +163,61 @@
             BetButton.TabIndex = 9;
             BetButton.Text = "Play";
             BetButton.TextColor = Color.Black;
+            BetButton.Visible = false;
             BetButton.WarningColor = Color.FromArgb(230, 162, 60);
+            BetButton.Click += BetButton_Click;
+            // 
+            // ScoreBox
+            // 
+            ScoreBox.AutoSize = true;
+            ScoreBox.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ScoreBox.Location = new Point(289, 210);
+            ScoreBox.Name = "ScoreBox";
+            ScoreBox.Size = new Size(119, 16);
+            ScoreBox.TabIndex = 10;
+            ScoreBox.Text = "Round Score: 0";
+            ScoreBox.Visible = false;
+            // 
+            // DemonScoreBox
+            // 
+            DemonScoreBox.AutoSize = true;
+            DemonScoreBox.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DemonScoreBox.Location = new Point(289, 185);
+            DemonScoreBox.Name = "DemonScoreBox";
+            DemonScoreBox.Size = new Size(119, 16);
+            DemonScoreBox.TabIndex = 11;
+            DemonScoreBox.Text = "Demon Score: 0";
+            DemonScoreBox.Visible = false;
+            // 
+            // PlayerTurnButton
+            // 
+            PlayerTurnButton.BorderColor = Color.FromArgb(220, 223, 230);
+            PlayerTurnButton.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            PlayerTurnButton.DangerColor = Color.FromArgb(245, 108, 108);
+            PlayerTurnButton.DefaultColor = Color.FromArgb(255, 255, 255);
+            PlayerTurnButton.Font = new Font("MS Mincho", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PlayerTurnButton.HoverTextColor = Color.FromArgb(48, 49, 51);
+            PlayerTurnButton.InfoColor = Color.FromArgb(144, 147, 153);
+            PlayerTurnButton.Location = new Point(316, 246);
+            PlayerTurnButton.Name = "PlayerTurnButton";
+            PlayerTurnButton.PrimaryColor = Color.FromArgb(255, 128, 128);
+            PlayerTurnButton.Size = new Size(92, 40);
+            PlayerTurnButton.SuccessColor = Color.FromArgb(103, 194, 58);
+            PlayerTurnButton.TabIndex = 12;
+            PlayerTurnButton.Text = "My Turn";
+            PlayerTurnButton.TextColor = Color.Black;
+            PlayerTurnButton.Visible = false;
+            PlayerTurnButton.WarningColor = Color.FromArgb(230, 162, 60);
+            PlayerTurnButton.Click += PlayerTurnButton_Click;
             // 
             // windows95
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(450, 340);
+            Controls.Add(PlayerTurnButton);
+            Controls.Add(DemonScoreBox);
+            Controls.Add(ScoreBox);
             Controls.Add(BetButton);
             Controls.Add(tileSlot5);
             Controls.Add(tileSlot4);
@@ -177,7 +228,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "windows95";
             StartPosition = FormStartPosition.CenterParent;
@@ -206,5 +257,8 @@
         private PictureBox tileSlot4;
         private PictureBox tileSlot5;
         private ReaLTaiizor.Controls.HopeButton BetButton;
+        private Label ScoreBox;
+        private Label DemonScoreBox;
+        private ReaLTaiizor.Controls.HopeButton PlayerTurnButton;
     }
 }

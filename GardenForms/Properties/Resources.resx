@@ -128,9 +128,6 @@
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paintbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paintbackground.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ToolBoxCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToolBoxCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,11 +153,17 @@
     <value>..\Resources\msmincho.ttc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     <comment>Font</comment>
   </data>
+  <data name="jongback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jongback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="squiggle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\squiggle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="I_B_CARD14.TMX_1BRIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\I_B_CARD14.TMX_1BRIGHT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paintbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paintbackground.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg006" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,7 +174,31 @@
   <data name="untitledpaint1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\untitledpaint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jongback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jongback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
