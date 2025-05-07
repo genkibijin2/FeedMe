@@ -61,8 +61,23 @@ namespace GardenForms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void mahjongBetBox_Click(object sender, EventArgs e)
+        {
             windows95 game3 = new windows95();
             game3.ShowDialog();
+        }
+
+        private void mahjongBetBox_Hover(object sender, EventArgs e)
+        {
+            mahjongBetBox.Image = Properties.Resources.MahjongCard_bright;
+        }
+
+        private void mahjongBetBox_MouseLeave(object sender, EventArgs e)
+        {
+            mahjongBetBox.Image = Properties.Resources.MahjongCard;
         }
     }
 }

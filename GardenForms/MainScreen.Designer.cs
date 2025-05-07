@@ -32,14 +32,16 @@
             pictureBox1 = new PictureBox();
             FeedMeCard = new PictureBox();
             GardenToolsBox = new PictureBox();
+            mahjongBetBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FeedMeCard).BeginInit();
             ((System.ComponentModel.ISupportInitialize)GardenToolsBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)mahjongBetBox).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.bg006;
+            pictureBox1.BackgroundImage = Properties.Resources.bg0061;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.bg006;
             pictureBox1.Location = new Point(0, 0);
@@ -64,7 +66,7 @@
             // 
             // GardenToolsBox
             // 
-            GardenToolsBox.BackgroundImage = Properties.Resources.I_B_CARD14_TMX_1BRIGHT;
+            GardenToolsBox.BackgroundImage = Properties.Resources.ToolBoxCard;
             GardenToolsBox.Image = Properties.Resources.ToolBoxCard;
             GardenToolsBox.Location = new Point(274, 24);
             GardenToolsBox.Name = "GardenToolsBox";
@@ -75,11 +77,25 @@
             GardenToolsBox.MouseLeave += GardenToolsBox_Leave;
             GardenToolsBox.MouseHover += GardenToolsBox_Hover;
             // 
+            // mahjongBetBox
+            // 
+            mahjongBetBox.BackgroundImage = Properties.Resources.MahjongCard;
+            mahjongBetBox.Image = Properties.Resources.MahjongCard;
+            mahjongBetBox.Location = new Point(604, 24);
+            mahjongBetBox.Name = "mahjongBetBox";
+            mahjongBetBox.Size = new Size(98, 126);
+            mahjongBetBox.TabIndex = 4;
+            mahjongBetBox.TabStop = false;
+            mahjongBetBox.Click += mahjongBetBox_Click;
+            mahjongBetBox.MouseLeave += mahjongBetBox_MouseLeave;
+            mahjongBetBox.MouseHover += mahjongBetBox_Hover;
+            // 
             // MainScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(874, 457);
+            Controls.Add(mahjongBetBox);
             Controls.Add(GardenToolsBox);
             Controls.Add(FeedMeCard);
             Controls.Add(pictureBox1);
@@ -94,6 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)FeedMeCard).EndInit();
             ((System.ComponentModel.ISupportInitialize)GardenToolsBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)mahjongBetBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -101,5 +118,6 @@
         private PictureBox pictureBox1;
         private PictureBox FeedMeCard;
         private PictureBox GardenToolsBox;
+        private PictureBox mahjongBetBox;
     }
 }

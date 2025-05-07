@@ -83,6 +83,16 @@ namespace GardenForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg0061 {
+            get {
+                object obj = ResourceManager.GetObject("bg0061", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -217,6 +227,26 @@ namespace GardenForms.Properties {
             get {
                 object obj = ResourceManager.GetObject("M2Blip", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MahjongCard {
+            get {
+                object obj = ResourceManager.GetObject("MahjongCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MahjongCard_bright {
+            get {
+                object obj = ResourceManager.GetObject("MahjongCard_bright", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

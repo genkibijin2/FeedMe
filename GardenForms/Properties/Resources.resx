@@ -118,46 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="untitledpaint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\untitledpaint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jong3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="smash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\smash.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment>smash sound</comment>
+  <data name="jong6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ToolBoxCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ToolBoxCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="untitledpaint1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\untitledpaint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="M2Blip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\M2Blip.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment>Earthbound BLip</comment>
-  </data>
-  <data name="rfuel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rfuel.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment>refuel sound</comment>
-  </data>
-  <data name="32349redapple_98912" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\32349redapple_98912.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="statup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statup.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment>Stat Increase Sound</comment>
-  </data>
-  <data name="ToolBoxCard_bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ToolBoxCard_bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="msmincho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\msmincho.ttc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment>Font</comment>
-  </data>
-  <data name="jongback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jongback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="squiggle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\squiggle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jong8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="I_B_CARD14.TMX_1BRIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\I_B_CARD14.TMX_1BRIGHT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,40 +139,75 @@
   <data name="paintbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paintbackground.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg006" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jongback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jongback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="I_B_CARD14.TMX_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\I_B_CARD14.TMX_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rfuel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rfuel.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>refuel sound</comment>
   </data>
-  <data name="untitledpaint1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\untitledpaint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ToolBoxCard_bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolBoxCard_bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jong2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jong3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jong4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="I_B_CARD14.TMX_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\I_B_CARD14.TMX_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jong5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jong6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="M2Blip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M2Blip.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Earthbound BLip</comment>
+  </data>
+  <data name="MahjongCard_bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MahjongCard_bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squiggle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squiggle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jong4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="untitledpaint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\untitledpaint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msmincho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\msmincho.ttc;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Font</comment>
+  </data>
+  <data name="MahjongCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MahjongCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="32349redapple_98912" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\32349redapple_98912.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolBoxCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolBoxCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statup.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>Stat Increase Sound</comment>
+  </data>
+  <data name="smash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smash.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <comment>smash sound</comment>
+  </data>
+  <data name="jong9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jong9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jong7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jong8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="jong9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jong9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg0061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
