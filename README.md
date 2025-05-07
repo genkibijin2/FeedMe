@@ -16,4 +16,5 @@ The async of the console output means that the main thread doesn't pause the fra
 <br /><br />
 The program is designed to be run on windows x64, but includes all of the dependencies inside of the single .exe file in order to make it ultra-portable.<br />
 The massive filesize is because all of the .net dependencies that usually need to be downloaded from microsoft are packaged inside of the .exe<br />
-
+# Mahjong Tile dice
+This program lets me test out async random numbers and simulate a dice roll environment. It also allowed me to try making custom frames without system titlebars etc, and then giving it code to function as a window should.
