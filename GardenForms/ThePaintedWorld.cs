@@ -24,6 +24,7 @@ namespace GardenForms
         int currentPositionDown = 1;
         float currentTranslationx = 0F;
         float currentTranslationy = 0F;
+        int colourSelection = 1;
         private void VMU_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
@@ -91,13 +92,31 @@ namespace GardenForms
             Rectangle rect = new Rectangle(currentPositionLeft, currentPositionDown, currentSize, currentSize);
             g.RotateTransform(currentRotationAngle, MatrixOrder.Append);
             g.TranslateTransform(currentTranslationx, currentTranslationy);
-            LinearGradientBrush lBrush = new LinearGradientBrush(rect, Color.Red, Color.Yellow, LinearGradientMode.BackwardDiagonal);
-            g.FillRectangle(lBrush, rect);
+            LinearGradientBrush col1brush = new LinearGradientBrush(rect, Color.Red, Color.Yellow, LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush col2brush = new LinearGradientBrush(rect, Color.LimeGreen, Color.Purple, LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush col3brush = new LinearGradientBrush(rect, Color.DeepSkyBlue, Color.White, LinearGradientMode.BackwardDiagonal);
+            LinearGradientBrush col4brush = new LinearGradientBrush(rect, Color.BlueViolet, Color.Orange, LinearGradientMode.BackwardDiagonal);
+
+            switch (colourSelection)
+            {
+                case 1:
+                    g.FillRectangle(col1brush, rect);
+                    break;
+                case 2:
+                    g.FillRectangle(col2brush, rect);
+                    break;
+                case 3:
+                    g.FillRectangle(col3brush, rect);
+                    break;
+                case 4:
+                    g.FillRectangle(col4brush, rect);
+                    break;
+            }
         }
 
         private void drawingZone_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -115,6 +134,28 @@ namespace GardenForms
         {
             currentTranslationx = scatterAmount.Value;
             currentTranslationy = scatterAmount.Value;
+        }
+
+        private void colourControl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ColourButton_Click(object sender, EventArgs e)
+        {
+            if (colourSelection < 4)
+            {
+                colourSelection++;
+            }
+            else
+            {
+                colourSelection = 1;
+            }
+        }
+
+        private void backButton_Enter(object sender, EventArgs e)
+        {
+            backClickableSection.Image = Properties.Resources.backsectionHighLight;
         }
     }
 }

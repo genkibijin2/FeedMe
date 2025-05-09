@@ -123,6 +123,26 @@ namespace GardenForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg00611 {
+            get {
+                object obj = ResourceManager.GetObject("bg00611", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colour {
+            get {
+                object obj = ResourceManager.GetObject("colour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -456,6 +476,26 @@ namespace GardenForms.Properties {
         internal static System.Drawing.Bitmap vmuback {
             get {
                 object obj = ResourceManager.GetObject("vmuback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VMUCard {
+            get {
+                object obj = ResourceManager.GetObject("VMUCard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VMUCardHighlight {
+            get {
+                object obj = ResourceManager.GetObject("VMUCardHighlight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

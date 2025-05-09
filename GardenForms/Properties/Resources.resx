@@ -121,6 +121,9 @@
   <data name="jong3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -158,8 +161,8 @@
   <data name="jong2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="I_B_CARD14.TMX_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\I_B_CARD14.TMX_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="colour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\colour.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jong5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +175,9 @@
   </data>
   <data name="MahjongCard_bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MahjongCard_bright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_B_CARD14.TMX_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\I_B_CARD14.TMX_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -194,6 +200,9 @@
   </data>
   <data name="VMU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VMU.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg00611" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="32349redapple_98912" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\32349redapple_98912.ico;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -228,8 +237,8 @@
   <data name="macwindowmask" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\macwindowmask.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg006" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VMU3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VMU3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="macwindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\macwindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -240,7 +249,10 @@
   <data name="VMU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VMU1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VMU3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VMU3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VMUCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VMUCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VMUCardHighlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VMUCardHighlight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

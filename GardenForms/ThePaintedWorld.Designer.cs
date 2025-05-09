@@ -35,12 +35,15 @@
             trackBar1 = new TrackBar();
             locationControl = new TrackBar();
             scatterAmount = new TrackBar();
+            colourControl = new PictureBox();
+            ColourButton = new ReaLTaiizor.Controls.HopeButton();
             ((System.ComponentModel.ISupportInitialize)VMU).BeginInit();
             ((System.ComponentModel.ISupportInitialize)backClickableSection).BeginInit();
             ((System.ComponentModel.ISupportInitialize)drawingZone).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)locationControl).BeginInit();
             ((System.ComponentModel.ISupportInitialize)scatterAmount).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)colourControl).BeginInit();
             SuspendLayout();
             // 
             // VMU
@@ -64,6 +67,7 @@
             backClickableSection.TabIndex = 1;
             backClickableSection.TabStop = false;
             backClickableSection.Click += backClickableSection_Click;
+            backClickableSection.MouseEnter += backButton_Enter;
             backClickableSection.MouseLeave += backButton_StopHover;
             backClickableSection.MouseHover += backButton_Hover;
             // 
@@ -119,12 +123,44 @@
             scatterAmount.TickStyle = TickStyle.None;
             scatterAmount.Scroll += scatterAmount_Scroll;
             // 
+            // colourControl
+            // 
+            colourControl.Image = Properties.Resources.colour;
+            colourControl.Location = new Point(227, 139);
+            colourControl.Name = "colourControl";
+            colourControl.Size = new Size(86, 30);
+            colourControl.TabIndex = 6;
+            colourControl.TabStop = false;
+            colourControl.Click += colourControl_Click;
+            // 
+            // ColourButton
+            // 
+            ColourButton.BorderColor = Color.FromArgb(220, 223, 230);
+            ColourButton.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            ColourButton.DangerColor = Color.FromArgb(245, 108, 108);
+            ColourButton.DefaultColor = Color.FromArgb(255, 255, 255);
+            ColourButton.Font = new Font("MS Mincho", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ColourButton.HoverTextColor = Color.FromArgb(48, 49, 51);
+            ColourButton.InfoColor = Color.FromArgb(144, 147, 153);
+            ColourButton.Location = new Point(389, 120);
+            ColourButton.Name = "ColourButton";
+            ColourButton.PrimaryColor = Color.FromArgb(64, 158, 255);
+            ColourButton.Size = new Size(73, 40);
+            ColourButton.SuccessColor = Color.FromArgb(103, 194, 58);
+            ColourButton.TabIndex = 7;
+            ColourButton.Text = "Colour";
+            ColourButton.TextColor = Color.White;
+            ColourButton.WarningColor = Color.FromArgb(230, 162, 60);
+            ColourButton.Click += ColourButton_Click;
+            // 
             // ThePaintedWorld
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.macwindowmask;
             ClientSize = new Size(546, 653);
+            Controls.Add(ColourButton);
+            Controls.Add(colourControl);
             Controls.Add(locationControl);
             Controls.Add(trackBar1);
             Controls.Add(drawingZone);
@@ -143,6 +179,7 @@
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ((System.ComponentModel.ISupportInitialize)locationControl).EndInit();
             ((System.ComponentModel.ISupportInitialize)scatterAmount).EndInit();
+            ((System.ComponentModel.ISupportInitialize)colourControl).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +193,7 @@
         private TrackBar trackBar1;
         private TrackBar locationControl;
         private TrackBar scatterAmount;
+        private PictureBox colourControl;
+        private ReaLTaiizor.Controls.HopeButton ColourButton;
     }
 }

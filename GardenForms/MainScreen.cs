@@ -61,8 +61,7 @@ namespace GardenForms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            ThePaintedWorld PaintingDemo = new ThePaintedWorld();
-            PaintingDemo.ShowDialog();
+            
         }
 
         private void mahjongBetBox_Click(object sender, EventArgs e)
@@ -79,6 +78,37 @@ namespace GardenForms
         private void mahjongBetBox_MouseLeave(object sender, EventArgs e)
         {
             mahjongBetBox.Image = Properties.Resources.MahjongCard;
+        }
+
+        private void VMU_MouseEnter(object sender, EventArgs e)
+        {
+            VMUcard.Image = Properties.Resources.VMUCardHighlight;
+        }
+
+        private void VMU_MouseLeave(object sender, EventArgs e)
+        {
+            VMUcard.Image = Properties.Resources.VMUCard;
+        }
+
+        private void FeedMeCard_Enter(object sender, EventArgs e)
+        {
+            FeedMeCard.Image = Properties.Resources.I_B_CARD14_TMX_1BRIGHT;
+        }
+
+        private void GardenToolsBox_Enter(object sender, EventArgs e)
+        {
+            GardenToolsBox.Image = Properties.Resources.ToolBoxCard_bright;
+        }
+
+        private void mahjongBetBox_Enter(object sender, EventArgs e)
+        {
+            mahjongBetBox.Image = Properties.Resources.MahjongCard_bright;
+        }
+
+        private void VMUcard_Click(object sender, EventArgs e)
+        {
+            ThePaintedWorld PaintingDemo = new ThePaintedWorld();
+            PaintingDemo.ShowDialog();
         }
     }
 }
