@@ -61,7 +61,8 @@ namespace GardenForms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+            ThePaintedWorld PaintingDemo = new ThePaintedWorld();
+            PaintingDemo.ShowDialog();
         }
 
         private void mahjongBetBox_Click(object sender, EventArgs e)
