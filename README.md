@@ -14,7 +14,12 @@ Async methods will be very useful in the future for developing APIs as most of t
 Currently there is one function, to generate two random numbers and test if they are divisible, but the point is more that the output will be displayed in the console window with a typewriter effect.<br />
 The async of the console output means that the main thread doesn't pause the frame loading of the gif background while it delays between outputting each letter of the result.<br />
 <br /><br />
-The program is designed to be run on windows x64, but includes all of the dependencies inside of the single .exe file in order to make it ultra-portable.<br />
-The massive filesize is because all of the .net dependencies that usually need to be downloaded from microsoft are packaged inside of the .exe<br />
+
 # Mahjong Tile dice
-This program lets me test out async random numbers and simulate a dice roll environment. It also allowed me to try making custom frames without system titlebars etc, and then giving it code to function as a window should.
+This program lets me test out async random numbers and simulate a dice roll environment. It also allowed me to try making custom frames without system titlebars etc, and then giving it code to function as a window should.<br />
+
+# VMU
+This app is testing a few different features. The first is creating non-standard winforms shapes using the transparency layers and some custom bitmaps. It's mainly a test for the Graphics() methods, and the OnPaint event that exists inside winforms. There are sliders that control the values fed into the rectangles drawn on every frame, and a colour button that alters the type of gradient used. <br /><br />
+
+/---The program is designed to be run on windows x64, but includes all of the dependencies inside of the single .exe file in order to make it ultra-portable.---\<br />
+\--------The massive filesize is because all of the .net dependencies that usually need to be downloaded from microsoft are packaged inside of the .exe---------/<br />
